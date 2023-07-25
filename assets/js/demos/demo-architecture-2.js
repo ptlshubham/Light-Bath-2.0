@@ -124,7 +124,7 @@ Theme Version:	9.9.3
 
 			// Ajax
 			$.ajax({
-				url: 'ajax/demo-architecture-2-ajax-projects-load-more-' + (parseInt(self.currentPage)+1) + '.html',
+				url: 'assets/ajax/demo-architecture-2-ajax-projects-load-more-' + (parseInt(self.currentPage)+1) + '.html',
 				complete: function(data) {
 
 					var $items = $(data.responseText);
