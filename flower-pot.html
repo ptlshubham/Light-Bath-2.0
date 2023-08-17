@@ -175,7 +175,7 @@
 							<div class="row mb-4">
 								<div class="col">
 									<ul class="nav nav-pills sort-source custom-nav-filter justify-content-center pb-2 mb-4 appear-animation"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2100"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1450"
 										data-sort-id="portfolio" data-option-key="filter"
 										data-plugin-options="{'layoutMode': 'masonry', 'filter': '*'}">
 										<li class="nav-item active" data-option-value="*"><a class="nav-link active"
@@ -190,7 +190,7 @@
 												href="#">Tabto Collection</a></li>
 									</ul>
 									<div class="sort-destination-loader sort-destination-loader-showing appear-animation"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2300">
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1550">
 										<div id="loadMoreWrapper"
 											class="row row-gutter-sm px-0 image-gallery sort-destination"
 											data-sort-id="portfolio" data-total-pages="3">
@@ -208,9 +208,10 @@
 																	<h4
 																		class="text-color-light font-weight-bold line-height-2 text-6 ls-0 mb-0">
 																		Newo Collection</h4>
-																	<p
+																		<p
 																		class="font-weight-semibold text-color-grey text-2 mb-0">
-																		<a href="https://www.bonasila.com/newo/" target="_blank"
+																		<a href="#" data-bs-toggle="modal"
+																			data-bs-target="#formModal"
 																			class="font-weight-bold text-color-light text-decoration-none">
 																			View More <i class="fa fa-arrow-right"
 																				aria-hidden="true"></i></a>
@@ -235,9 +236,10 @@
 																	<h4
 																		class="text-color-light font-weight-bold line-height-2 text-6 ls-0 mb-0">
 																		Existo Collection</h4>
-																	<p
+																		<p
 																		class="font-weight-semibold text-color-grey text-2 mb-0">
-																		<a href="https://www.bonasila.com/planters/" target="_blank"
+																		<a href="#" data-bs-toggle="modal"
+																			data-bs-target="#formModal"
 																			class="font-weight-bold text-color-light text-decoration-none">
 																			View More <i class="fa fa-arrow-right"
 																				aria-hidden="true"></i></a>
@@ -262,9 +264,10 @@
 																	<h4
 																		class="text-color-light font-weight-bold line-height-2 text-6 ls-0 mb-0">
 																		Rezelo Collection</h4>
-																	<p
+																		<p
 																		class="font-weight-semibold text-color-grey text-2 mb-0">
-																		<a href="https://www.bonasila.com/rezelo/" target="_blank"
+																		<a href="#" data-bs-toggle="modal"
+																			data-bs-target="#formModal"
 																			class="font-weight-bold text-color-light text-decoration-none">
 																			View More <i class="fa fa-arrow-right"
 																				aria-hidden="true"></i></a>
@@ -289,9 +292,10 @@
 																	<h4
 																		class="text-color-light font-weight-bold line-height-2 text-6 ls-0 mb-0">
 																		Tabto Collection</h4>
-																	<p
+																		<p
 																		class="font-weight-semibold text-color-grey text-2 mb-0">
-																		<a href="https://www.bonasila.com/tabto/" target="_blank"
+																		<a href="#" data-bs-toggle="modal"
+																			data-bs-target="#formModal"
 																			class="font-weight-bold text-color-light text-decoration-none">
 																			View More <i class="fa fa-arrow-right"
 																				aria-hidden="true"></i></a>
@@ -380,6 +384,56 @@
 									</div>
 								</div>
 							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="formModalLabel">Contact US</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"
+								aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<form id="demo-form" class="mb-4" novalidate="novalidate">
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-start text-sm-end mb-0">Name</label>
+									<div class="col-sm-9">
+										<input type="text" name="name" class="form-control"
+											placeholder="Type your name..." required />
+									</div>
+								</div>
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-start text-sm-end mb-0">Email</label>
+									<div class="col-sm-9">
+										<input type="email" name="email" class="form-control"
+											placeholder="Type your email..." required />
+									</div>
+								</div>
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-start text-sm-end mb-0">Contact Number</label>
+									<div class="col-sm-9">
+										<input type="contact" name="contact" class="form-control"
+											placeholder="Enter Contact Number" />
+									</div>
+								</div>
+								<input type="hidden" name="subject" id="subject" class="form-control" value="Kitchen" />
+								<div class="form-group row">
+									<label class="col-sm-3 text-start text-sm-end mb-0">Message</label>
+									<div class="col-sm-9">
+										<textarea rows="4" class="form-control" name="message" id="message"
+											placeholder="Type your Message..."></textarea>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save Changes</button>
 						</div>
 					</div>
 				</div>
